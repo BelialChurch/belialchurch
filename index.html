@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <nav class="header__nav">
+                <div class="header__logo">
+                    <img src="/img/shopno-logo.png" alt="">
+                </div>
+
+                <ul class="hide" id="burger-menu">
+                    <li class="header__itm">
+                        <a href="#" class="header__link">About us</a>
+                    </li>
+                    <li class="header__itm">
+                        <a href="#" class="header__link">Features</a>
+                    </li>
+                    <li class="header__itm">
+                        <a href="#" class="header__link">Service</a>
+                    </li>
+                    <li class="header__itm">
+                        <a href="#" class="header__link">Team</a>
+                    </li>
+                    <li class="header__itm">
+                        <a href="#" class="header__link">Opinion</a>
+                    </li>
+                    <li class="header__itm">
+                        <a href="#" class="header__link">Contact Us</a>
+                    </li>
+                </ul>
+
+                
+                <div class="header__burger" id="burger" onclick="addClassNew('burger-menu', 'header__list')" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 30 21"><g><g opacity="6"><path d="M1.5 17h27a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-27A1.5 1.5 0 0 1 0 19.5v-1A1.5 1.5 0 0 1 1.5 17z"/></g><g opacity="6"><path d="M1.5 9h27a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-27A1.5 1.5 0 0 1 0 11.5v-1A1.5 1.5 0 0 1 1.5 9z"/></g><g opacity="6"><path d="M1.5 0h27A1.5 1.5 0 0 1 30 1.5v1A1.5 1.5 0 0 1 28.5 4h-27A1.5 1.5 0 0 1 0 2.5v-1A1.5 1.5 0 0 1 1.5 0z"/></g></g></svg>
+                </div>
+            </nav>
+    
+            <h1 class="header__title">
+                Say Hello to <span class="title_blue">SHOPNO!</span> <br>
+                <span class="title_blue">Agency</span> CORPORATE SHOPNO Theme
+            </h1>
+
+            <div class="contact hide" id="popup">
+                <div class="container">
+                    <div class="exit" id="popup-exit" onclick="addClassNew('popup', 'popup')">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: SketchAPI 5.1.316 <https://api.sketch.io/> -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" style="" sketchjs:metadata="eyJ0aXRsZSI6IkRyYXdpbmciLCJkZXNjcmlwdGlvbiI6Ik1hZGUgd2l0aCBTa2V0Y2hwYWQgLSBodHRwczovL3NrZXRjaC5pby9za2V0Y2hwYWQiLCJtZXRhZGF0YSI6e30sImNsaXBQYXRoIjp7ImVuYWJsZWQiOnRydWUsInN0eWxlIjp7InN0cm9rZVN0eWxlIjoiYmxhY2siLCJsaW5lV2lkdGgiOjF9fSwiZXhwb3J0RFBJIjo3MiwiZXhwb3J0Rm9ybWF0IjoicG5nIiwiZXhwb3J0UXVhbGl0eSI6MC45NSwidW5pdHMiOiJweCIsIndpZHRoIjoyNSwiaGVpZ2h0IjoyNSwicGFnZXMiOnsibGVuZ3RoIjoxLCJkYXRhIjpbeyJ3aWR0aCI6MjUsImhlaWdodCI6MjV9XX19" width="25" height="25" viewBox="0 0 25 25" sketchjs:version="5.1.316">
+                        <path sketchjs:tool="rectangle" style="fill: transparent; mix-blend-mode: source-over; fill-opacity: 1; fill-rule: nonzero; vector-effect: non-scaling-stroke;" d="M0 0 L25 0 25 25 0 25 z"/>
+                        <polyline sketchjs:tool="polyline" style="fill: none; stroke: #000000; mix-blend-mode: source-over; stroke-alignment: center; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 3.52;" points="0,0 25,25 27,33"/>
+                        <polyline sketchjs:tool="polyline" style="fill: none; stroke: #000000; mix-blend-mode: source-over; stroke-alignment: center; stroke-dasharray: none; stroke-dashoffset: 0; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 3.52;" points="39,0 14,25 0,33" transform="matrix(1,0,0,1,-14,0)"/>
+                        </svg>
+                    </div>
+
+                    <form action="#" class="contact__form">
+                        <input type="text" placeholder="Name*">
+                        <input type="text" placeholder="Subject*">
+                        <input type="e-mail" placeholder="E-mail*">
+                        <textarea name="" placeholder="Message*"></textarea>
+                        <button type="submit">SEND MESSAGE</button>
+                    </form>
+        
+                    <div class="contact__info">
+                        <address class="contact__address">
+                            <ul>
+                                <li>Adress line 1 </li>
+                                <li>Adress line 2 </li>
+                                <li>Phone: +548 945645</li>
+                                <li>Fax: +456456 54546</li>
+                            </ul>
+        
+                            <ul>
+                                <li>Web: www.designagency.net</li>
+                                <li>E-mail: info@designagency.net</li>
+                            </ul>
+                        </address>
+        
+                        <div class="contact__map">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aae2d330cd1f970a38fd2727987cd3e4957308decd777692a887523f155c37b23&amp;source=constructor" width="455" height="224" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="header-btn" onclick="addClassNew('popup', 'popup')">
+                <button class="header__btn" id="header__button">contact us</button>
+            </div>
+
+            <div class="header__img">
+                <img src="/img/header-decor-img.png" alt="">
+            </div>
+    </div>
+    </header>
+    <!-- header -->
+
+    <div class="about">
+        <div class="container">
+            <div class="about__title title">about us</div>
+            <div class="about__descr descr">
+                Lorem ipsum dolor sit amet event landing template
+            </div>
+
+            <div class="about__explain">
+                <div class="about__slider">
+                    <div class="about__slide">
+                        <img src="/img/about-slide-img.webp" alt="">
+                    </div>
+                    <div class="about__slide">
+                        <img src="/img/about-slide-img.webp" alt="">
+                    </div>
+                    <div class="about__slide">
+                        <img src="/img/about-slide-img.webp" alt="">
+                    </div>
+                    <div class="about__slide">
+                        <img src="/img/about-slide-img.webp" alt="">
+                    </div>
+                    
+
+                    <div class="about__dots">
+                        <div class="about__dot active-dot" onclick="aboutSwapDots(1)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><g><g><path class="about-dots_color" fill="#d0d0d0" d="M3.866-.002h3.701a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3.866a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3z"/></g></g></svg>
+                        </div>
+                        <div class="about__dot" onclick="aboutSwapDots(2)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><g><g><path class="about-dots_color" fill="#d0d0d0" d="M3.866-.002h3.701a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3.866a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3z"/></g></g></svg>
+                        </div>
+                        <div class="about__dot" onclick="aboutSwapDots(3)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><g><g><path class="about-dots_color" fill="#d0d0d0" d="M3.866-.002h3.701a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3.866a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3z"/></g></g></svg>
+                        </div>
+                        <div class="about__dot" onclick="aboutSwapDots(4)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><g><g><path class="about-dots_color" fill="#d0d0d0" d="M3.866-.002h3.701a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3.866a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3z"/></g></g></svg>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="about__reason">
+                    <div class="top">
+                        <div class="about__reason_title">We Actually Do amazing works</div>
+                        <p class="about-p_margin">A visual approach is an approach to a runway at an airport 
+                            conducted under instrument flight rules. The pilot must at all times have either the airport or the preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all times.
+                        </p>
+                        <p>
+                            Preceding aircraft in approach correct sight. conducted under instrument flight rules.
+                        </p>
+                    </div>
+
+                    <div class="bot">
+                        <div class="about__reason_title">
+                            why we are the great?
+                        </div>
+                        <p>
+                            A visual approach is an approach to a runway at an airport 
+                            conducted under instrument flight rules.
+                            The preceding aircraft in approach correct sight.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about -->
+
+    <div class="features">
+            <div class="features__title title">
+                featured works
+            </div>
+
+            <div class="features__descr descr">
+                Lorem ipsum dolor sit amet event landing template
+            </div>
+
+            <div class="features__cards">
+                <div class="features__card">
+                    <img src="/img/features-card-1.webp" alt="">
+                </div>
+                <div class="features__card">
+                    <img src="/img/features-card-2.webp" alt="">
+                </div>
+                <div class="features__card">
+                    <img src="/img/features-card-3.webp" alt="">
+                </div>
+                <div class="features__card">
+                    <img src="/img/features-card-4.webp" alt="">
+                </div>
+                <div class="features__card">
+                    <img src="/img/features-card-5.webp" alt="">
+                </div>
+                <div class="features__card">
+                    <img src="/img/features-card-6.webp" alt="">
+                </div>
+            </div>
+    </div>
+    <!-- features -->
+
+    <div class="service">
+        <div class="service__title title">
+            our services
+        </div>
+        <div class="service__descr descr">
+            Lorem ipsum dolor sit amet event landing template
+        </div>
+
+        <div class="service__cards">
+            <div class="service__card sad" id="first">
+                <div class= "service__card_content">
+                    <div class="service__card_title">
+                        Designing is The CooL LOVE FOR.
+                    </div>
+
+                    <div class="service__card_descr">
+                        Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                    </div>
+
+                    <button class="service__card_btn" onclick="addClass('first')" id="service-btn">
+                        <span class="serviceHide">KNOW MORE</span> <span class="arrow"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="service__card sad" id="second">
+                <div class= "service__card_content">
+                    <div class="service__card_title">
+                        Bootstrap skills
+                    </div>
+
+                    <div class="service__card_descr">
+                        Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                    </div>
+
+                    <button class="service__card_btn" id="2asd" onclick="addClass('second')">
+                        <span class="serviceHide">KNOW MORE</span> <span class="arrow"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="service__card sad" id="third">
+                <div class= "service__card_content">
+                    <div class="service__card_title">
+                        Designing is The Cool
+                    </div>
+
+                    <div class="service__card_descr">
+                        Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                    </div>
+
+                    <button class="service__card_btn" id="2asd" onclick="addClass('third')">
+                        <span class="serviceHide">KNOW MORE</span> <span class="arrow"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="service__card sad" id="fouth">
+                <div class= "service__card_content">
+                    <div class="service__card_title">
+                        PSD TO HTML KORI
+                    </div>
+
+                    <div class="service__card_descr">
+                        Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                    </div>
+
+                    <button class="service__card_btn" id="2asd" onclick="addClass('fouth')">
+                        <span class="serviceHide">KNOW MORE</span> <span class="arrow"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="service__card sad" id="fifth">
+                <div class= "service__card_content">
+                    <div class="service__card_title">
+                        cool psd Design
+                    </div>
+
+                    <div class="service__card_descr">
+                        Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                    </div>
+
+                    <button class="service__card_btn" id="2asd" onclick="addClass('fifth')">
+                        <span class="serviceHide">KNOW MORE</span> <span class="arrow"></span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="service__card sad" id="sixth">
+                <div class= "service__card_content">
+                    <div class="service__card_title">
+                        Quick work
+                    </div>
+
+                    <div class="service__card_descr">
+                        Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most this job was posted less than five minutes ago, and we think it’s a good match for you. If you submit a proposal now, you’ll be one of the first candidates. You may even catch the client while they’re still online.
+                    </div>
+
+                    <button class="service__card_btn" id="2asd" onclick="addClass('sixth')">
+                        <span class="serviceHide">KNOW MORE</span> <span class="arrow"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- service -->
+
+    <div class="team">
+        <div class="team__title title">small team</div>
+        <div class="team__descr descr">
+            Lorem ipsum dolor sit amet event landing template
+        </div>
+        <div class="team__cards">
+            <div class="team__card">
+                <img src="/img/team-1.jpg" alt="" class="team__photo">
+                <div class="team__info">
+                    <div class="team__info_top">
+                        <span class="team__name">AL RAYHAN </span>
+                        <span class="team__position"> / UI Designer</span>
+                    </div>  
+
+                    <div class="team__info_middle">
+                        Lorem Ipsum is not simply is  an action designer random text
+                        It has roots in a piece. 
+                    </div>
+
+                    <div class="team__info_social">
+                        <ul>
+                            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/ball.png" alt="#"></a></li>
+                            <li><a href="#"><img src="/img/e-mail.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="team__card">
+                <img src="/img/team-2.jpg" alt="" class="team__photo">
+                <div class="team__info">
+                    <div class="team__info_top">
+                        <span class="team__name">AL RAYHAN </span>
+                        <span class="team__position"> / UI Designer</span>
+                    </div>  
+
+                    <div class="team__info_middle">
+                        Lorem Ipsum is not simply is  an action designer random text
+                        It has roots in a piece. 
+                    </div>
+
+                    <div class="team__info_social">
+                        <ul>
+                            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/ball.png" alt="#"></a></li>
+                            <li><a href="#"><img src="/img/e-mail.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="team__card">
+                <img src="/img/team-3.jpg" alt="" class="team__photo">
+                <div class="team__info">
+                    <div class="team__info_top">
+                        <span class="team__name">AL RAYHAN </span>
+                        <span class="team__position"> / UI Designer</span>
+                    </div>  
+
+                    <div class="team__info_middle">
+                        Lorem Ipsum is not simply is  an action designer random text
+                        It has roots in a piece. 
+                    </div>
+
+                    <div class="team__info_social">
+                        <ul>
+                            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/ball.png" alt="#"></a></li>
+                            <li><a href="#"><img src="/img/e-mail.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="team__card">
+                <img src="/img/team-4.jpg" alt="" class="team__photo">
+                <div class="team__info">
+                    <div class="team__info_top">
+                        <span class="team__name">AL RAYHAN </span>
+                        <span class="team__position"> / UI Designer</span>
+                    </div>  
+
+                    <div class="team__info_middle">
+                        Lorem Ipsum is not simply is  an action designer random text
+                        It has roots in a piece. 
+                    </div>
+
+                    <div class="team__info_social">
+                        <ul>
+                            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/ball.png" alt="#"></a></li>
+                            <li><a href="#"><img src="/img/e-mail.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="team__card">
+                <img src="/img/team-5.jpg" alt="" class="team__photo">
+                <div class="team__info">
+                    <div class="team__info_top">
+                        <span class="team__name">AL RAYHAN </span>
+                        <span class="team__position"> / UI Designer</span>
+                    </div>  
+
+                    <div class="team__info_middle">
+                        Lorem Ipsum is not simply is  an action designer random text
+                        It has roots in a piece. 
+                    </div>
+
+                    <div class="team__info_social">
+                        <ul>
+                            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/ball.png" alt="#"></a></li>
+                            <li><a href="#"><img src="/img/e-mail.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="team__card">
+                <img src="/img/team-6.jpg" alt="" class="team__photo">
+                <div class="team__info">
+                    <div class="team__info_top">
+                        <span class="team__name">AL RAYHAN </span>
+                        <span class="team__position"> / UI Designer</span>
+                    </div>  
+
+                    <div class="team__info_middle">
+                        Lorem Ipsum is not simply is  an action designer random text
+                        It has roots in a piece. 
+                    </div>
+
+                    <div class="team__info_social">
+                        <ul>
+                            <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="/img/ball.png" alt="#"></a></li>
+                            <li><a href="#"><img src="/img/e-mail.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- team -->
+
+    <div class="opinion">
+            <div class="opinion__title title">
+                what they says
+            </div>
+            <div class="opinion__descr descr">
+                Lorem ipsum dolor sit amet event landing template
+            </div>
+
+            <div class="container">
+                
+            <div class="opinion__slider">
+                <div class="opinion__slide">
+                    <div class="opinion__img">
+                        <img src="/img/team-3.jpg" alt="">
+                    </div>
+
+                    <div class="opinion__text">
+                        <div class="opinion_title">
+                            <span class="name">AL RAYHAN</span>
+                            <span class="position">/ UI/UX DESIGNER</span>
+                        </div>
+
+                        <div class="opinion_descr">
+                            Lorem Ipsum is simply dummy text of the printing and you 
+                            standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+
+                        <div class="opinion__rank">
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="opinion__slide">
+                    <div class="opinion__img">
+                        <img src="/img/team-2.jpg" alt="">
+                    </div>
+
+                    <div class="opinion__text">
+                        <div class="opinion_title">
+                            <span class="name">JON WATSON</span>
+                            <span class="position">/ UI/UX DESIGNER</span>
+                        </div>
+
+                        <div class="opinion_descr">
+                            Lorem Ipsum is simply dummy text of the printing and you 
+                            standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+
+                        <div class="opinion__rank">
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="opinion__slide">
+                    <div class="opinion__img">
+                        <img src="/img/team-1.jpg" alt="">
+                    </div>
+
+                    <div class="opinion__text">
+                        <div class="opinion_title">
+                            <span class="name">SARA MAKSWELL</span>
+                            <span class="position">/ UI/UX DESIGNER</span>
+                        </div>
+
+                        <div class="opinion_descr">
+                            Lorem Ipsum is simply dummy text of the printing and you 
+                            standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+
+                        <div class="opinion__rank">
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="opinion__slide">
+                    <div class="opinion__img">
+                        <img src="/img/team-4.jpg" alt="">
+                    </div>
+
+                    <div class="opinion__text">
+                        <div class="opinion_title">
+                            <span class="name">POL JORDAN</span>
+                            <span class="position">/ UI/UX DESIGNER</span>
+                        </div>
+
+                        <div class="opinion_descr">
+                            Lorem Ipsum is simply dummy text of the printing and you 
+                            standard dummy know that text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </div>
+
+                        <div class="opinion__rank">
+                            <ul>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                                <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"><g><g><path fill="#f2da3b" d="M7.682 0l2.532 4.4 5.15.948-3.585 3.666.65 4.986-4.747-2.133L2.934 14l.65-4.986L0 5.348l5.15-.949L7.682 0"/></g></g></svg></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="opinion-slider-dots">
+                    <div class="opinion-slider-dot" onclick="dotSwap(1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><g><g><path class="slider-dots_color" fill="#d0d0d0" d="M3.866-.002h3.701a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3.866a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3z"/></g></g></svg>
+                    </div>
+                    <div class="opinion-slider-dot" onclick="dotSwap(2)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><g><g><path class="slider-dots_color" fill="#d0d0d0" d="M3.866-.002h3.701a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3.866a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3z"/></g></g></svg>
+                    </div>
+                    <div class="opinion-slider-dot" onclick="dotSwap(3)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><g><g><path class="slider-dots_color" fill="#d0d0d0" d="M3.866-.002h3.701a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3.866a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3z"/></g></g></svg>
+                    </div>
+                    <div class="opinion-slider-dot" onclick="dotSwap(4)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><g><g><path class="slider-dots_color" fill="#d0d0d0" d="M3.866-.002h3.701a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3H3.866a3 3 0 0 1-3-3v-4a3 3 0 0 1 3-3z"/></g></g></svg>
+                    </div>
+                </div>
+
+                <div class="slider-arrows">
+                    <div class="opinion__slider_prev" id="opinionPrev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"><g><g class="arrow_opacity" opacity="0.3"><path d="M14 14.999l-7.574-7.5L14-.001H7.575L0 7.499l7.575 7.5z"/></g></g></svg>
+                    </div>
+        
+                    <div class="opinion__slider_next" id="opinionNext">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15"><g><g class="arrow_opacity" opacity="0.3"><path d="M0 14.999l7.574-7.5L0-.001h6.425L14 7.499l-7.575 7.5z"/></g></g></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- opinion -->
+
+    <div class="bad">
+        <img src="/img/notMyBad.png" alt="">
+    </div>
+    <!-- bad -->
+
+    <div class="contact">
+        <div class="container">
+            <form action="#" class="contact__form">
+                <input type="text" placeholder="Name*">
+                <input type="text" placeholder="Subject*">
+                <input type="e-mail" placeholder="E-mail*">
+                <textarea name="" placeholder="Message*"></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+
+            <div class="contact__info">
+                <address class="contact__address">
+                    <ul>
+                        <li>Adress line 1 </li>
+                        <li>Adress line 2 </li>
+                        <li>Phone: +548 945645</li>
+                        <li>Fax: +456456 54546</li>
+                    </ul>
+
+                    <ul>
+                        <li>Web: www.designagency.net</li>
+                        <li>E-mail: info@designagency.net</li>
+                    </ul>
+                </address>
+
+                <div class="contact__map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aae2d330cd1f970a38fd2727987cd3e4957308decd777692a887523f155c37b23&amp;source=constructor" width="455" height="224" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+
+    <footer class="footer">
+        <div class="footer__links">
+            <div class="footer__links_title">
+                FOLLOW US
+            </div>
+
+            <ul class="footer__list">
+                <li>
+                    <a href="#" class="footer__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="40" viewBox="0 0 31 31"><g><g opacity="1"><path class="svg-background" fill="#424648" d="M15.344.228c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15z"/></g><g opacity="1"><path class="svg-logo" fill="#bebfc0" d="M16.472 13.086V11.82c0-.66.062-1.018 1.008-1.018h1.268V8.266h-2.026c-2.437 0-3.294 1.232-3.294 3.294v1.526H11.91v2.535h1.518v7.356h3.044V15.62h2.026l.268-2.535z"/></g></g></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="40" viewBox="0 0 31 31"><g><g opacity="1"><path class="svg-background" fill="#424648" d="M15.344.228c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15z"/></g><g opacity="1"><path class="svg-logo" fill="#bebfc0" d="M14.74 17.786c-.152-.018-.295-.018-.447-.018-1.464 0-3.642.465-3.642 2.321 0 1.714 1.928 2.375 3.357 2.375 1.33 0 2.811-.536 2.811-2.098 0-1.25-1.169-1.946-2.08-2.58zm-1.375-8.712c-1.17 0-1.74 1.036-1.74 2.089 0 1.357.892 3.481 2.48 3.481 1.224 0 1.643-.883 1.643-1.973 0-1.356-.732-3.597-2.383-3.597zm5.115-.643l-1.205.705H16.07c.883.554 1.33 1.634 1.33 2.634 0 2.366-2 2.544-2 3.722 0 1.152 2.678 1.607 2.678 4.106 0 1.027-.49 1.857-1.25 2.518-1.026.883-2.428 1.169-3.749 1.169C11.41 23.285 9 22.57 9 20.5c0-.42.144-.83.331-1.205.795-1.607 3.276-2.017 4.874-2.062-.295-.384-.571-.83-.571-1.33 0-.295.107-.491.196-.768-.214.027-.42.045-.625.045-1.731 0-3.231-1.277-3.231-3.071 0-1.696 1.312-3.142 2.937-3.5a8.034 8.034 0 0 1 1.669-.178zm5.373 3.428h-2.285v2.285h-1.142V11.86H18.14v-1.142h2.285V8.43h1.142v2.286h2.285z"/></g></g></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="40" viewBox="0 0 31 31"><g><g opacity="1"><path class="svg-background" fill="#424648" d="M15.344.228c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15z"/></g><g opacity="1"><path class="svg-logo" fill="#bebfc0" d="M12.115 12.868H9.17v8.846h2.945zm.188-2.732c-.01-.865-.634-1.526-1.643-1.526-1 0-1.66.66-1.66 1.526 0 .848.634 1.527 1.625 1.527h.017c1.027 0 1.67-.679 1.66-1.527zm10.408 6.508c0-2.714-1.446-3.982-3.383-3.982-1.565 0-2.264.857-2.651 1.463v-1.257H13.74s.036.83 0 8.846h2.937v-4.937c0-.267.026-.526.098-.723.214-.526.696-1.07 1.508-1.07 1.063 0 1.491.812 1.491 1.999v4.73h2.937z"/></g></g></svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="footer__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="40" viewBox="0 0 31 31"><g><g opacity="1"><path class="svg-background" fill="#424648" d="M15.344.228c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15z"/></g><g opacity="1"><path class="svg-logo" fill="#bebfc0" d="M22.46 10.93a5.776 5.776 0 0 1-1.66.447 2.875 2.875 0 0 0 1.268-1.589 5.675 5.675 0 0 1-1.83.696 2.876 2.876 0 0 0-2.107-.91 2.882 2.882 0 0 0-2.883 2.883c0 .223.027.446.072.66A8.194 8.194 0 0 1 9.375 10.1a2.882 2.882 0 0 0 .893 3.857 2.9 2.9 0 0 1-1.304-.367v.036c0 1.402.99 2.562 2.312 2.83-.241.063-.5.099-.759.099-.187 0-.366-.019-.544-.045a2.888 2.888 0 0 0 2.695 2 5.775 5.775 0 0 1-3.579 1.23c-.241 0-.464-.008-.696-.034A8.15 8.15 0 0 0 12.82 21c5.302 0 8.204-4.392 8.204-8.203 0-.126 0-.25-.01-.376a6.202 6.202 0 0 0 1.447-1.49z"/></g></g></svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="footer__copyright">
+                Copyright Masum Parvej, All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="/js/main.js"></script>
+</body>
+</html>
