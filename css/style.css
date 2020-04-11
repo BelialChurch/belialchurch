@@ -264,25 +264,25 @@ ol {
     .service #first .service__card_content, .service #third .service__card_content, .service #sixth .service__card_content {
       max-width: 470px; }
   .service #first {
-    background: url(/img/service-card-1.webp) no-repeat; }
+    background: url(../img/service-card-1.webp) no-repeat; }
   .service #third {
-    background: url(/img/service-card-3.webp) no-repeat center; }
+    background: url(../img/service-card-3.webp) no-repeat center; }
   .service #second, .service #fouth, .service #fifth {
     background-size: cover;
     min-width: 472px; }
     .service #second .service__card_content, .service #fouth .service__card_content, .service #fifth .service__card_content {
       max-width: 370px; }
   .service #second {
-    background: url(/img/service-card-2.webp) no-repeat; }
+    background: url(../img/service-card-2.webp) no-repeat; }
   .service #fouth {
-    background: url(/img/service-card-4.webp) no-repeat center;
+    background: url(../img/service-card-4.webp) no-repeat center;
     background-size: cover; }
   .service #fifth {
-    background: url(/img/service-card-5.webp) no-repeat;
+    background: url(../img/service-card-5.webp) no-repeat;
     background-size: cover;
     margin-right: 25px; }
   .service #sixth {
-    background: url(/img/service-card-6.webp) no-repeat;
+    background: url(../img/service-card-6.webp) no-repeat;
     margin-right: 0;
     background-size: cover; }
 
@@ -356,7 +356,7 @@ ol {
     box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18);
     background-color: #6df6eb; }
     .team__info::before {
-      content: url(/img/tringle.png);
+      content: url(../img/tringle.png);
       position: absolute;
       top: -8%;
       left: 1%; }
@@ -485,7 +485,7 @@ ol {
 .contact {
   padding-top: 120px;
   padding-bottom: 123px;
-  background: url(/img/contact-bg.webp) no-repeat center;
+  background: url(../img/contact-bg.webp) no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 3; }
